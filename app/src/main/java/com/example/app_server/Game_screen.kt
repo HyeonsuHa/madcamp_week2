@@ -15,6 +15,10 @@ import kotlinx.android.synthetic.main.activity_6.*
 import kotlinx.android.synthetic.main.activity_game_screen.*
 
 class Game_screen : AppCompatActivity() {
+
+
+
+
     var cardList = arrayListOf<Card>(
         Card(0, "#DD2C00"),  //red
         Card(2,"#FF6F00")
@@ -40,9 +44,15 @@ class Game_screen : AppCompatActivity() {
 
         }
 
-        game_card_my1.setOnClickListener({
+        val cardAdapter2 = card_recycler_adapter(this,cardListmy)
+        recylerview_for_hands.adapter = cardAdapter2
+
+        val layout2 = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,true)
+        recylerview_for_hands.layoutManager = layout2
+
+        /*game_card_my1.setOnClickListener({
             mysocket.emit("시작 게임",)
-        })
+        })*/
 
         game_enemy1.setOnClickListener({
             var builder = AlertDialog.Builder(this)
