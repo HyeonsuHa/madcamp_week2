@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.app_server.Mysocket
+import com.example.app_server.Mysocket.Companion.mysocket
 import com.example.app_server.R
 import org.json.JSONObject
 
@@ -22,6 +23,10 @@ class card_recycler_adapter2(val context: Context, private val dataList : ArrayL
         {
             cardview.setCardBackgroundColor(Color.parseColor(card.card_color))
             textview.text = card.number.toString()
+            cardview.setOnClickListener ({
+                mysocket.emit("게임 시작",Card(card.number,card.card_color))
+                Log.d("카드","클릭")
+            })
         }
     }
 

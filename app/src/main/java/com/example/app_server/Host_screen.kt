@@ -67,6 +67,7 @@ class Host_screen : AppCompatActivity() {
             unactivate_max_button(max_button5, max_text5)
             unactivate_max_button(max_button6, max_text6)
             playerNum = 2
+            Log.d("최대 인원",playerNum.toString())
             check_max_num_ok()
             check_make_room_button()
         })
@@ -77,6 +78,7 @@ class Host_screen : AppCompatActivity() {
             unactivate_max_button(max_button5, max_text5)
             unactivate_max_button(max_button6, max_text6)
             playerNum = 3
+            Log.d("최대 인원",playerNum.toString())
             check_max_num_ok()
             check_make_room_button()
         })
@@ -87,6 +89,7 @@ class Host_screen : AppCompatActivity() {
             unactivate_max_button(max_button5, max_text5)
             unactivate_max_button(max_button6, max_text6)
             playerNum = 4
+            Log.d("최대 인원",playerNum.toString())
             check_max_num_ok()
             check_make_room_button()
         })
@@ -97,6 +100,7 @@ class Host_screen : AppCompatActivity() {
             activate_max_button(max_button5, max_text5)
             unactivate_max_button(max_button6, max_text6)
             playerNum = 5
+            Log.d("최대 인원",playerNum.toString())
             check_max_num_ok()
             check_make_room_button()
         })
@@ -107,6 +111,7 @@ class Host_screen : AppCompatActivity() {
             unactivate_max_button(max_button5, max_text5)
             activate_max_button(max_button6, max_text6)
             playerNum = 6
+            Log.d("최대 인원",playerNum.toString())
             check_max_num_ok()
             check_make_room_button()
         })
@@ -131,7 +136,9 @@ class Host_screen : AppCompatActivity() {
                 if(jsondata.getBoolean("success")){
                     Log.d("arg","성공")
                     val intent_to_wait = Intent(this@Host_screen, Waiting_screen::class.java)
+                    intent_to_wait.putExtra("max_number",playerNum)
                     startActivity(intent_to_wait)
+                    finish()
                 }
                 else {
                     Log.d("arg","실패")

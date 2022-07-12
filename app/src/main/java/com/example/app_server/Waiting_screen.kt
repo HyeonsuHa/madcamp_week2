@@ -8,15 +8,22 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.app_server.Mysocket.Companion.mysocket
 import kotlinx.android.synthetic.main.waiting.*
 import org.json.JSONObject
+import player_number
+import java.util.concurrent.ThreadLocalRandom.current
 import kotlin.math.absoluteValue
 
 class Waiting_screen : AppCompatActivity() {
 
-    var current : Int = 1
-    var max : Int = 6
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        val intent_ex = getIntent()
+        var current = 1
+
+        var max : Int = intent_ex.getIntExtra("max_number",6)
+        Log.d("메세지",intent_ex.getIntExtra("max_number",6).toString())
         setContentView(R.layout.waiting)
+
 
         set_layouts(current,max)
 
@@ -85,7 +92,7 @@ class Waiting_screen : AppCompatActivity() {
         else if(num == 6) return "6"
         else return "00"
     }
-    fun get_set_data( inputobject : JSONObject)  {
+    fun get_set_data( inputobject : JSONObject) {
         val keys = inputobject.keys()
         while (keys.hasNext()) {
             val key = keys.next();
@@ -96,12 +103,12 @@ class Waiting_screen : AppCompatActivity() {
             val listdata = arrayListOf<String>()
             val jsonarray2 = jsonobject2.getJSONArray("players")
             var j=0
-            if(jsonarray2 != null)
+            /*if(jsonarray2 != null)
             {
                 set_layouts(jsonarray2.length(),playerNum)
-                current = jsonarray2.length()
-                max = playerNum
-            }
+                player_number.current = jsonarray2.length()
+                player_number.max = playerNum
+            }*/
         /*var room_info : Room_info = Room_info(name.toString(), players, playerNum)*/
         }
     }

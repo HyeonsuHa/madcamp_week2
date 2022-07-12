@@ -7,6 +7,7 @@
 
     >
     <androidx.cardview.widget.CardView
+        android:clickable="true"
         android:id="@+id/game_card_my"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -23,7 +24,7 @@
                 android:text="3"
                 android:textAlignment="center"
                 android:fontFamily="@font/cookierun_bold"
-                android:textSize="40sp"
+                android:textSize="35sp"
                 android:textColor="@color/white"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
