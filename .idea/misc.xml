@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/parkh/AndroidStudioProjects/app_server/app/src/main/res/drawable/border.xml" value="0.198" />
+        <entry key="..\:/Users/parkh/AndroidStudioProjects/app_server/app/src/main/res/drawable/border_circle.xml" value="0.1" />
+        <entry key="..\:/Users/parkh/AndroidStudioProjects/app_server/app/src/main/res/drawable/border_for_back.xml" value="0.1045" />
+        <entry key="..\:/Users/parkh/AndroidStudioProjects/app_server/app/src/main/res/drawable/border_for_box_nickname_winrate.xml" value="0.155" />
+        <entry key="..\:/Users/parkh/AndroidStudioProjects/app_server/app/src/main/res/drawable/border_for_player_box.xml" value="0.197" />
+        <entry key="..\:/Users/parkh/AndroidStudioProjects/app_server/app/src/main/res/drawable/border_for_player_info_box.xml" value="0.1495" />
+        <entry key="..\:/Users/parkh/AndroidStudioProjects/app_server/app/src/main/res/drawable/border_for_player_room.xml" value="0.1495" />
+        <entry key="..\:/Users/parkh/AndroidStudioProjects/app_server/app/src/main/res/drawable/border_for_profile_image.xml" value="0.1495" />
+        <entry key="..\:/Users/parkh/AndroidStudioProjects/app_server/app/src/main/res/drawable/border_for_ready_button.xml" value="0.197" />
+        <entry key="..\:/Users/parkh/AndroidStudioProjects/app_server/app/src/main/res/drawable/border_for_ready_profile.xml" value="0.1495" />
+        <entry key="..\:/Users/parkh/AndroidStudioProjects/app_server/app/src/main/res/drawable/border_for_room_name.xml" value="0.1045" />
+        <entry key="..\:/Users/parkh/AndroidStudioProjects/app_server/app/src/main/res/drawable/border_for_roomlist_recycler.xml" value="0.195" />
+        <entry key="..\:/Users/parkh/AndroidStudioProjects/app_server/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1045" />
+        <entry key="..\:/Users/parkh/AndroidStudioProjects/app_server/app/src/main/res/layout/activity_10.xml" value="0.22" />
+        <entry key="..\:/Users/parkh/AndroidStudioProjects/app_server/app/src/main/res/layout/activity_2.xml" value="0.14945652173913043" />
+        <entry key="..\:/Users/parkh/AndroidStudioProjects/app_server/app/src/main/res/layout/activity_3.xml" value="0.1" />
+        <entry key="..\:/Users/parkh/AndroidStudioProjects/app_server/app/src/main/res/layout/activity_4.xml" value="0.14945652173913043" />
+        <entry key="..\:/Users/parkh/AndroidStudioProjects/app_server/app/src/main/res/layout/activity_5.xml" value="0.14945652173913043" />
+        <entry key="..\:/Users/parkh/AndroidStudioProjects/app_server/app/src/main/res/layout/activity_6.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/parkh/AndroidStudioProjects/app_server/app/src/main/res/layout/activity_8.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/parkh/AndroidStudioProjects/app_server/app/src/main/res/layout/activity_9.xml" value="0.22" />
+        <entry key="..\:/Users/parkh/AndroidStudioProjects/app_server/app/src/main/res/layout/activity_game_screen.xml" value="0.1" />
+        <entry key="..\:/Users/parkh/AndroidStudioProjects/app_server/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/parkh/AndroidStudioProjects/app_server/app/src/main/res/layout/border_for_room_name.xml" value="0.1" />
+        <entry key="..\:/Users/parkh/AndroidStudioProjects/app_server/app/src/main/res/layout/borderlayout.xml" value="0.1890625" />
+        <entry key="..\:/Users/parkh/AndroidStudioProjects/app_server/app/src/main/res/layout/card_item.xml" value="0.22" />
+        <entry key="..\:/Users/parkh/AndroidStudioProjects/app_server/app/src/main/res/layout/card_item_my.xml" value="0.12092391304347826" />
+        <entry key="..\:/Users/parkh/AndroidStudioProjects/app_server/app/src/main/res/layout/cards.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/parkh/AndroidStudioProjects/app_server/app/src/main/res/layout/custom_layout.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/parkh/AndroidStudioProjects/app_server/app/src/main/res/layout/enter_button_layout.xml" value="0.1" />
+        <entry key="..\:/Users/parkh/AndroidStudioProjects/app_server/app/src/main/res/layout/host_screen.xml" value="0.18802083333333333" />
+        <entry key="..\:/Users/parkh/AndroidStudioProjects/app_server/app/src/main/res/layout/justtest.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/parkh/AndroidStudioProjects/app_server/app/src/main/res/layout/login_screen.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/parkh/AndroidStudioProjects/app_server/app/src/main/res/layout/main_screen.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/parkh/AndroidStudioProjects/app_server/app/src/main/res/layout/player_box_item.xml" value="0.22" />
+        <entry key="..\:/Users/parkh/AndroidStudioProjects/app_server/app/src/main/res/layout/player_room_item.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/parkh/AndroidStudioProjects/app_server/app/src/main/res/layout/room_list_screen.xml" value="0.1591710758377425" />
+        <entry key="..\:/Users/parkh/AndroidStudioProjects/app_server/app/src/main/res/layout/roomlist_item.xml" value="0.1734375" />
+        <entry key="..\:/Users/parkh/AndroidStudioProjects/app_server/app/src/main/res/layout/signup_screen.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/parkh/AndroidStudioProjects/app_server/app/src/main/res/layout/system_message_item.xml" value="0.1" />
+        <entry key="..\:/Users/parkh/AndroidStudioProjects/app_server/app/src/main/res/layout/waiting.xml" value="0.14666666666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
