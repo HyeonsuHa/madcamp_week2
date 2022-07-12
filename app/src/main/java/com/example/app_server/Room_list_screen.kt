@@ -31,10 +31,15 @@ class Room_list_screen : AppCompatActivity() {
         Mysocket.mysocket.emit("enter-lobbylist")
         Mysocket.mysocket.on("enter-lobbylist") { arg ->
             val room_unique_id = JSONObject(arg[0].toString())
-            Log.d("로그인4", arg[0].toString())
+            Log.d("방입장", arg[0].toString())
             val keys = room_unique_id.keys()
+            val keys_2 = room_unique_id.keys()
+            Log.d("방입장2", keys_2.toString())
+            var i =0
+            var k =0
             val room_in_fo = arrayListOf<Room_info>()
             while (keys.hasNext()) {
+                var key_name = keys.next().toString()
                 val key = keys.next();
                 val value = room_unique_id.get(key)
                 Log.d("로그인5",value.toString())
@@ -52,18 +57,19 @@ class Room_list_screen : AppCompatActivity() {
                         j++
                     }
                 }
-                val new_room_info : Room_info = Room_info(name,listdata,playerNum)
+                val new_room_info : Room_info = Room_info(name,listdata,playerNum,key_name)
                 room_in_fo.add(new_room_info)
                 Log.d("로그인7",listdata.toString())
 
 
                 Log.d("로그인6",jsonarray2.toString())
-
+                i++
                 /*var room_info : Room_info = Room_info(name.toString(), players, playerNum)*/
             }
             val newadapter = Room_info_adapter(this,room_in_fo)
-            room_list_recyclerview.adapter = newadapter
-
+            runOnUiThread{room_list_recyclerview.adapter = newadapter}
         }
+
+
     }
 }

@@ -2,15 +2,20 @@ package com.example.app_server
 
 import Room_info_list
 import android.content.Context
+import android.content.Intent
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.app_server.Mysocket.Companion.mysocket
 import com.example.app_server.for_sharedpreference.MyApplication
+import kotlinx.coroutines.NonCancellable.start
+import org.json.JSONObject
 
 class Room_info_adapter(private val context: Context, private val dataList: ArrayList<Room_info>) :
     RecyclerView.Adapter<Room_info_adapter.myViewHolder>() {
@@ -24,10 +29,21 @@ class Room_info_adapter(private val context: Context, private val dataList: Arra
             name_of_room.text = info.name
             max_current.text = info.players.count().toString() + "/" +info.playerNum.toString()
             roomlistcard.setOnClickListener({
-                mysocket.emit("enter-lobby", roomlistcard.id)
+                mysocket.emit("enter-lobby", info.unique_id)
+                Log.d("방입장",info.unique_id)
                 Log.d("방입장","보냄")
                 mysocket.on("enter-lobby")  { arg ->
+                    val jsonObject = JSONObject(arg[0].toString())
+                    if(jsonObject.getBoolean("success")) {
+                        Log.d("방입장","성공")
+                        mysocket.emit("new_player_enter_room",info.unique_id)
+                        val intent_to_lobby = Intent(context,Waiting_screen::class.java)
+                        intent_to_lobby.run{context.startActivity(this)}
+                    }
+                    else{
+                         Log.d("방입장","실패용")
 
+                    }
                 }
             })
         }
